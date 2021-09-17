@@ -33,9 +33,6 @@ export default App;
 // // var baseUrl = "https://api.football-data.org/v2/"
 
 
-// // var token = '6650e090e32c4642a2ba1009c734c8b4'
-
-
 // function App() {
 
 //   const [standings, setStandings] = useState([])
