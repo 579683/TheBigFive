@@ -110,7 +110,6 @@ function Bundesliga() {
   return (
     <Router>
       <Fragment>
-        <Navbar />
         <Switch>
           <Route exact path="/BL1" render={(props) => {
             return (

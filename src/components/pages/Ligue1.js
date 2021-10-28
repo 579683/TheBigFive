@@ -112,7 +112,7 @@ function Ligue1() {
   return (
     <Router>
       <Fragment>
-        <Navbar />
+        {/* <Navbar /> */}
         <Switch>
           <Route exact path="/FL1" render={(props) => {
             return (

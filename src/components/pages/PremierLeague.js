@@ -113,7 +113,6 @@ function PremierLeague() {
   return (
     <Router>
       <Fragment>
-        <Navbar />
         <Switch>
           <Route exact path="/" render={(props) => {
             return (

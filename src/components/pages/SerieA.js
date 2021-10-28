@@ -112,7 +112,6 @@ function SerieA() {
   return (
     <Router>
       <Fragment>
-        <Navbar />
         <Switch>
           <Route exact path="/SA" render={(props) => {
             return (

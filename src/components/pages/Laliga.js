@@ -111,7 +111,6 @@ function Laliga() {
   return (
     <Router>
       <Fragment>
-        <Navbar />
         <Switch>
           <Route exact path="/PD" render={(props) => {
             return (
