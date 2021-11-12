@@ -4,8 +4,10 @@ import axios from 'axios'
 import Table from "../teams/table"
 import Navbar from '../layout/Navbar';
 import Team from "../teams/team";
+import PreviousMatches from '../matches/PreviousMatches';
 import UpcomingMatches from '../matches/UpcomingMatches';
 import {TodoContext} from '../../context'
+import Player from '../players/Player';
 
 // var baseUrl = "https://api.football-data.org/v2/"
 
@@ -126,6 +128,14 @@ function PremierLeague() {
               <Team {...props} getTeamInfo={() => getTeamInfo} team={team} getPlayerInfo={getPlayerInfo} getPrevMatches={getPrevMatches} getUpcMatches={getUpcMatches} onChangeHandler={onChangeHandler} searchTerm={searchTerm} loading={loading} />
             );
           }}
+          />
+          <Route exact path="/player/:id" render={(props) => (
+            <Player {...props} getPlayerInfo={() => getPlayerInfo} player={player} loading={loading} />
+          )}
+          />
+          <Route exact path="/previous-matches/:id" render={(props) => (
+            <PreviousMatches {...props} getPrevMatches={() => getPrevMatches} prevMatches={prevMatches} loading={loading} />
+          )}
           />
           <Route exact path="/upcoming-matches/:id" render={(props) => (
             <UpcomingMatches {...props} getUpcMatches={() => getUpcMatches} upcMatches={upcMatches} loading={loading} />
