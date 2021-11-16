@@ -118,7 +118,8 @@ function PremierLeague() {
         <Switch>
           <Route exact path="/" render={(props) => {
             return (
-              <Table {...props} clicked={getTeamInfo} loading={loading} standings={standings} name={name} getUpcMatches={getUpcMatches} upcMatches={upcMatches} />
+              <Table {...props} clicked={getTeamInfo} loading={loading} standings={standings} name={name} getUpcMatches={getUpcMatches} upcMatches={upcMatches} /> 
+              // logo={'https://www.google.com/url?sa=i&url=https%3A%2F%2Fcareers-in-sport.co.uk%2Fpl-logo-compact-dark-rgb-png%2F&psig=AOvVaw0k-H1prPCbP_GPyS52gCDM&ust=1637147263516000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMCyjv_enPQCFQAAAAAdAAAAABAb'}
             );
           }}
           />

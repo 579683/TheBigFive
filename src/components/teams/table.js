@@ -57,6 +57,7 @@ const Table = (props) => {
     // } else {
         return (
             <div className="container">
+                <img src={props.logo}/>
                 <h1 className="text-center my-2">{props.name}</h1>
                 <div style={{ overflowX: "auto" }}>
                     <table>
