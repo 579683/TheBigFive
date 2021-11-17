@@ -189,7 +189,7 @@ img {
 .btn-primary,
 .bg-primary {
     background: $primeColor;
-    color: #fff;
+    color: #333;
 }
 
 .btn-light,
@@ -309,9 +309,6 @@ table th {
 .navbar a:hover {
     color: $lightColor;
 }
-
-
-/* Jovan's styles */
 
 .eu-logo {
     max-width: 120px;
@@ -435,6 +432,7 @@ header {
     position: absolute;
     right: 2rem;
     font-weight: 700;
+    color: #002366;
 }
 
 .results-list-item-away {
@@ -444,11 +442,13 @@ header {
 
 .fixtures-date {
     padding: 2rem 0 2rem 1rem;
+    color: #002366;
 }
 
 .results-headings {
     display: flex;
     justify-content: space-between;
+    color: #002366;
 }
 
 .results-result {
@@ -465,7 +465,7 @@ header {
 }
 
 footer {
-    margin-top: 2rem;
+    margin-top: 5rem;
     width: 100%;
     text-align: center;
     flex-shrink: 0;

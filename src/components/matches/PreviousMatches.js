@@ -8,7 +8,7 @@ const PreviousMatches = (props) => {
 
     return (
         <React.Fragment>
-            <h1 className="text-center mb-1">Previous Matches</h1>
+            <h1 className='text-center my-2'>Previous Matches</h1>
             <div className="container results-container mt-2">
                 {props.prevMatches.map((match) => {
                     let formattedDate = new Date(match.utcDate);
@@ -32,11 +32,11 @@ const PreviousMatches = (props) => {
                                         {match.homeTeam.name}
                                     </span>
                                     <div className="results-result">
-                                        <span>{match.score.fullTime.homeTeam}</span>
+                                        <span>{match.score.fullTime.homeTeam}&nbsp;</span>
                                         <span style={{ marginLeft: "2px", marginRight: "2px" }}>
-                                            :
+                                            -
                                         </span>
-                                        <span>{match.score.fullTime.awayTeam}</span>
+                                        <span>&nbsp;{match.score.fullTime.awayTeam}</span>
                                     </div>
                                     <span className="results-list-item-away">
                                         {match.awayTeam.name}

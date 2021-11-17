@@ -8,7 +8,7 @@ const UpcomingMatches = (props) => {
 
     return (
         <Fragment>
-            <h1 className='text-center mb-1'>Upcoming Matches</h1>
+            <h1 className='text-center my-2'>Upcoming Matches</h1>
             <div className='container fixtures-container mt-2'>
                 {props.upcMatches.map((match) => {
                     let formattedDate = new Date(match.utcDate);
@@ -16,7 +16,7 @@ const UpcomingMatches = (props) => {
                     return (
                         <Fragment key={match.id}>
                             <h3 className='fixtures-date'>
-                                Date:
+                                Date: 
                                 <span className='date-span'>
                                     {formattedDate.toLocaleDateString()}
                                 </span>
@@ -24,11 +24,11 @@ const UpcomingMatches = (props) => {
                             <ul className='fixtures-list'>
                                 <li className='fixtures-list-item'>
                                     <div className='fixtures-list-item-div'>
-                                        <span>{match.homeTeam.name}&nbsp;&nbsp;</span>
+                                        <span>{match.homeTeam.name}&ensp;</span>
                                         <span>
                                             <b>vs</b>
                                         </span>
-                                        <span>&nbsp;&nbsp;{match.awayTeam.name}</span>
+                                        <span>&ensp;{match.awayTeam.name}</span>
                                     </div>
                                     <span className='fixtures-list-item-span'>
                                         {match.competition.name}
