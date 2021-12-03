@@ -5,7 +5,7 @@
 $primeColor: #4DFFFF;
 $darkColor: #37003c;
 $lightColor: #fff;
-$dangerColor: #d81921;
+$dangerColor: #FF0000;
 $successColor: #00ff87;
 * {
     box-sizing: border-box;
@@ -57,6 +57,57 @@ img {
     max-width: 1100px;
     margin: auto;
     padding: 0 2rem;
+}
+
+.tableDesc {
+    // border-style: dotted;
+    // padding: 5px;
+    // border-radius: 25px;
+    margin-bottom: 120px;
+}
+
+.tableDesc p {
+    position: sticky;
+    left: 0px;
+    right: 0px;
+    height: 0px;
+    font-weight: 550;
+    text-decoration: underline dotted;
+    text-decoration-thickness: 2px;
+    margin-bottom: 20px;
+    // text-align: right;
+}
+
+.tableDesc .Winner {
+    width: 10px;
+    height: 10px;
+    bordeR: 1px solid;
+    border-radius: 50%;
+    background-color: $successColor;
+}
+
+.tableDesc .CL {
+    width: 10px;
+    height: 10px;
+    bordeR: 1px solid;
+    border-radius: 50%;
+    background-color: #82ccdd;
+}
+
+.tableDesc .EL {
+    width: 10px;
+    height: 10px;
+    bordeR: 1px solid;
+    border-radius: 50%;
+    background-color: #FF8C00;
+}
+
+.tableDesc .Relegation {
+    width: 10px;
+    height: 10px;
+    bordeR: 1px solid;
+    border-radius: 50%;
+    background-color: $dangerColor;
 }
 
 
@@ -351,15 +402,14 @@ tbody tr:nth-of-type(4) {
     background-color: #82ccdd;
 }
 
-tbody tr:nth-of-type(5),
-tbody tr:nth-of-type(6) {
-    background-color: #ff1a1a;
+tbody tr:nth-of-type(5) {
+    background-color: #FF8C00;
 }
 
 tbody tr:nth-of-type(18),
 tbody tr:nth-of-type(19),
 tbody tr:nth-of-type(20) {
-    background-color: #fe0a01;
+    background-color: $dangerColor;
 }
 
 tr:hover {
@@ -465,7 +515,13 @@ header {
 }
 
 footer {
-    margin-top: 5rem;
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    //margin-top: 5rem;
     width: 100%;
     text-align: center;
     flex-shrink: 0;

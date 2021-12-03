@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     return (
         <nav className="navbar bg-primary">
-            <img className="eu-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/European_Leagues_logo.svg/190px-European_Leagues_logo.svg.png" alt="Premier League Logo" />
+            <Link to="/">
+                <img className="eu-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/European_Leagues_logo.svg/190px-European_Leagues_logo.svg.png" alt="Premier League Logo" />
+            </Link>
             <ul>
                 <li style={{fontSize: "18px", textTransform: "uppercase"}}>
                     <Link to="/">Home</Link>

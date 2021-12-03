@@ -58,7 +58,7 @@ const Table = (props) => {
         return (
             <div className="container">
                 <img src={props.logo}/>
-                <h1 className="text-center my-2">{props.name}</h1>
+                <h1 className="text-center my-2">{props.name} (21/22)</h1>
                 <div style={{ overflowX: "auto" }}>
                     <table>
                         <thead>
@@ -78,6 +78,20 @@ const Table = (props) => {
                         </thead>
                         <tbody>{Tabledata()}</tbody>
                     </table>
+                </div>
+                &nbsp;
+                <div className="tableDesc">
+                    <div className="Winner"></div>
+                        <p>Leader / Winner</p> &nbsp;
+                    
+                    <div className="CL"></div>
+                        <p>Champion League</p> &nbsp;
+                    
+                    <div className="EL"></div>
+                        <p>Europa League</p> &nbsp;
+                    
+                    <div className="Relegation"></div>
+                        <p>Relegation</p> &nbsp;
                 </div>
             </div>
         );

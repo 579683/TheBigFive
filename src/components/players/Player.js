@@ -26,6 +26,7 @@ const Player = (props) => {
     return (
         <Fragment>
             <Homenav name={name} />
+            &nbsp;
             <h1 className="text-center mb-1">Player Details</h1>
             <div className="container py-1">
                 <div className="card all-center p-1 player-card">
