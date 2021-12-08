@@ -9,10 +9,7 @@ const Navbar = () => {
             </Link>
             <ul>
                 <li style={{fontSize: "18px", textTransform: "uppercase"}}>
-                    <Link to="/">Home</Link>
-                </li>
-                <li style={{fontSize: "18px", textTransform: "uppercase"}}>
-                    <Link to="/about">About</Link>
+                    <Link to="/">Premier League</Link>
                 </li>
                 <li style={{fontSize: "18px", textTransform: "uppercase"}}>
                     <Link to="/PD">La Liga</Link>
@@ -25,6 +22,9 @@ const Navbar = () => {
                 </li>
                 <li style={{fontSize: "18px", textTransform: "uppercase"}}>
                     <Link to="/SA">Serie A</Link>
+                </li>
+                <li style={{fontSize: "18px", textTransform: "uppercase"}}>
+                    <Link to="/about">About</Link>
                 </li>
             </ul>
         </nav>

@@ -1,5 +1,6 @@
 import React from "react";
 import Spinner from "../layout/Spinner";
+import Homenav from '../layout/Homenav';
 
 const PreviousMatches = (props) => {
     if(props.loading) {
@@ -8,6 +9,7 @@ const PreviousMatches = (props) => {
 
     return (
         <React.Fragment>
+            <Homenav />
             <h1 className='text-center my-2'>Previous Matches</h1>
             <div className="container results-container mt-2">
                 {props.prevMatches.map((match) => {

@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react'
 import Spinner from '../layout/Spinner'
+import Homenav from '../layout/Homenav';
 
 const UpcomingMatches = (props) => {
     if(props.loading) {
@@ -8,6 +9,7 @@ const UpcomingMatches = (props) => {
 
     return (
         <Fragment>
+            <Homenav />
             <h1 className='text-center my-2'>Upcoming Matches</h1>
             <div className='container fixtures-container mt-2'>
                 {props.upcMatches.map((match) => {

@@ -57,57 +57,53 @@ img {
     max-width: 1100px;
     margin: auto;
     padding: 0 2rem;
+    margin-bottom: 120px;
 }
 
 .tableDesc {
     // border-style: dotted;
     // padding: 5px;
     // border-radius: 25px;
-    margin-bottom: 120px;
-}
-
-.tableDesc p {
-    position: sticky;
-    left: 0px;
-    right: 0px;
-    height: 0px;
-    font-weight: 550;
-    text-decoration: underline dotted;
-    text-decoration-thickness: 2px;
-    margin-bottom: 20px;
-    // text-align: right;
-}
-
-.tableDesc .Winner {
-    width: 10px;
-    height: 10px;
-    bordeR: 1px solid;
-    border-radius: 50%;
-    background-color: $successColor;
-}
-
-.tableDesc .CL {
-    width: 10px;
-    height: 10px;
-    bordeR: 1px solid;
-    border-radius: 50%;
-    background-color: #82ccdd;
-}
-
-.tableDesc .EL {
-    width: 10px;
-    height: 10px;
-    bordeR: 1px solid;
-    border-radius: 50%;
-    background-color: #FF8C00;
-}
-
-.tableDesc .Relegation {
-    width: 10px;
-    height: 10px;
-    bordeR: 1px solid;
-    border-radius: 50%;
-    background-color: $dangerColor;
+    //margin-bottom: 120px;
+    p {
+        position: sticky;
+        left: 0px;
+        right: 0px;
+        height: 0px;
+        font-weight: 550;
+        text-decoration: underline dotted;
+        text-decoration-thickness: 2px;
+        margin-bottom: 20px;
+        // text-align: right;
+    }
+    .Winner {
+        width: 10px;
+        height: 10px;
+        bordeR: 1px solid;
+        border-radius: 50%;
+        background-color: $successColor;
+    }
+    .CL {
+        width: 10px;
+        height: 10px;
+        bordeR: 1px solid;
+        border-radius: 50%;
+        background-color: #82ccdd;
+    }
+    .EL {
+        width: 10px;
+        height: 10px;
+        bordeR: 1px solid;
+        border-radius: 50%;
+        background-color: #FF8C00;
+    }
+    .Relegation {
+        width: 10px;
+        height: 10px;
+        bordeR: 1px solid;
+        border-radius: 50%;
+        background-color: $dangerColor;
+    }
 }
 
 

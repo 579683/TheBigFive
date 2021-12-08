@@ -82,7 +82,7 @@ function PremierLeague() {
           },
         }
       );
-
+      
       setPrevMatches(response.data.matches)
       setLoading(false)
     }
